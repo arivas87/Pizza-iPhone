@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ffs-q4-9dv">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Ffs-q4-9dv">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tamaño-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
@@ -14,44 +14,105 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P3z-vJ-brJ">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <items/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDc-rM-Dpf">
+                                <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Tamaño" id="BON-BF-cie"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="obo-mC-txH"/>
+                                    <barButtonItem enabled="NO" title="Masa" id="l5M-K5-keX"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="fzB-h4-kIl"/>
+                                    <barButtonItem enabled="NO" title="Queso" id="gxK-ny-aQh"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7oh-BE-PBt"/>
+                                    <barButtonItem enabled="NO" title="Más" id="dCr-Jy-e8L"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="qjJ-0u-0IA"/>
+                                    <barButtonItem enabled="NO" title="Resumen" id="Pnb-GB-VWq"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAA-4E-jo8">
-                                <rect key="frame" x="268" y="508" width="64" height="30"/>
-                                <state key="normal" title="Siguiente"/>
-                                <connections>
-                                    <segue destination="Llq-8Y-XoI" kind="show" id="DhR-Sr-Q4y"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="P3z-vJ-brJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="DTN-EJ-kSS"/>
-                            <constraint firstItem="P3z-vJ-brJ" firstAttribute="top" secondItem="kAA-4E-jo8" secondAttribute="bottom" constant="18" id="Myv-i4-1OO"/>
-                            <constraint firstItem="kAA-4E-jo8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SxU-tv-8bL"/>
-                            <constraint firstAttribute="trailing" secondItem="P3z-vJ-brJ" secondAttribute="trailing" id="erj-nl-tLn"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="P3z-vJ-brJ" secondAttribute="bottom" id="qd6-4a-lzc"/>
+                            <constraint firstAttribute="trailing" secondItem="EDc-rM-Dpf" secondAttribute="trailing" id="UVx-1I-Hbf"/>
+                            <constraint firstItem="EDc-rM-Dpf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bnw-sB-WwE"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EDc-rM-Dpf" secondAttribute="bottom" id="hBK-ry-3uH"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="8pO-FY-ygU"/>
+                    <navigationItem key="navigationItem" title="Tamaño" id="8pO-FY-ygU">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="qkL-74-6rx">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="viU-gx-y9O" kind="show" id="av9-T4-GYw"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="547" y="1005"/>
+        </scene>
+        <!--Masa-->
+        <scene sceneID="HtW-SY-ir6">
+            <objects>
+                <viewController id="viU-gx-y9O" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zIS-EQ-96c"/>
+                        <viewControllerLayoutGuide type="bottom" id="tBM-lX-ZS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zrC-iP-fXe">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZS-dM-UNf">
+                                <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Tamaño" id="K2I-2x-NSz"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="8on-NJ-72c"/>
+                                    <barButtonItem title="Masa" id="c0G-S1-M6j"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="vBK-zn-1Zf"/>
+                                    <barButtonItem enabled="NO" title="Queso" id="rGP-1W-wRp"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="M52-XK-jab"/>
+                                    <barButtonItem enabled="NO" title="Más" id="hdj-AZ-Hoz"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="zp2-5e-Y50"/>
+                                    <barButtonItem enabled="NO" title="Resumen" id="epc-e8-itE"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tBM-lX-ZS2" firstAttribute="top" secondItem="FZS-dM-UNf" secondAttribute="bottom" id="5qa-36-voc"/>
+                            <constraint firstItem="FZS-dM-UNf" firstAttribute="leading" secondItem="zrC-iP-fXe" secondAttribute="leading" id="8Nc-FX-ikZ"/>
+                            <constraint firstAttribute="trailing" secondItem="FZS-dM-UNf" secondAttribute="trailing" id="FlX-CS-x7q"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Masa" id="MZo-WP-Buf">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="MYr-Hb-Lh2">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="4Nn-wI-vFB" kind="show" id="eZa-Kb-NS1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="soL-Hk-OeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1250" y="1005"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="39s-jY-DMR">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ffs-q4-9dv" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="SbA-Hm-xKR">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="SbA-Hm-xKR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -62,41 +123,145 @@
             </objects>
             <point key="canvasLocation" x="-171" y="1005"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="gfh-jf-Cgp">
+        <!--Queso-->
+        <scene sceneID="aLN-bJ-ZL7">
             <objects>
-                <viewController id="Llq-8Y-XoI" customClass="ViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4Nn-wI-vFB" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="fDu-ru-C9J"/>
-                        <viewControllerLayoutGuide type="bottom" id="SEM-Vv-gRP"/>
+                        <viewControllerLayoutGuide type="top" id="hAU-bn-kY8"/>
+                        <viewControllerLayoutGuide type="bottom" id="qeB-IT-Mre"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="Ost-4J-oDj">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                    <view key="view" contentMode="scaleToFill" id="xb4-1x-t8L">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8DN-n2-bfD">
-                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
-                                <items/>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzG-kq-wkO">
+                                <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Tamaño" id="YaZ-ix-oBJ"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Jh6-j9-Khr"/>
+                                    <barButtonItem enabled="NO" title="Masa" id="R23-J1-oGn"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="uIF-6F-fN4"/>
+                                    <barButtonItem title="Queso" id="ZmY-az-74O"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="9Pv-Ac-jeX"/>
+                                    <barButtonItem enabled="NO" title="Más" id="k2D-Ju-uLv"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="PW8-dt-tp5"/>
+                                    <barButtonItem enabled="NO" title="Resumen" id="3Zw-t2-Hry"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SR-eT-Tra">
-                                <rect key="frame" x="268" y="508" width="64" height="30"/>
-                                <state key="normal" title="Siguiente"/>
-                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="SEM-Vv-gRP" firstAttribute="top" secondItem="8DN-n2-bfD" secondAttribute="bottom" id="Itk-0I-r3d"/>
-                            <constraint firstItem="8DN-n2-bfD" firstAttribute="leading" secondItem="Ost-4J-oDj" secondAttribute="leading" id="O7k-bz-5ua"/>
-                            <constraint firstAttribute="trailing" secondItem="8DN-n2-bfD" secondAttribute="trailing" id="iJO-Wc-wD2"/>
-                            <constraint firstItem="8DN-n2-bfD" firstAttribute="top" secondItem="4SR-eT-Tra" secondAttribute="bottom" constant="18" id="nju-kj-v8w"/>
-                            <constraint firstItem="4SR-eT-Tra" firstAttribute="centerX" secondItem="Ost-4J-oDj" secondAttribute="centerX" id="pZw-bT-ixP"/>
+                            <constraint firstItem="qeB-IT-Mre" firstAttribute="top" secondItem="hzG-kq-wkO" secondAttribute="bottom" id="WJj-Vf-3ff"/>
+                            <constraint firstAttribute="trailing" secondItem="hzG-kq-wkO" secondAttribute="trailing" id="sdR-9D-Ob7"/>
+                            <constraint firstItem="hzG-kq-wkO" firstAttribute="leading" secondItem="xb4-1x-t8L" secondAttribute="leading" id="uny-TD-L0H"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="4Xw-Ib-Ydo"/>
+                    <navigationItem key="navigationItem" title="Queso" id="t7g-jb-ahD">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="FXo-Nu-RIm">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="vCc-LO-uSu" kind="show" id="LoM-K6-QeW"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2nX-KG-EJ5" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="diH-g6-7a1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1233" y="1005"/>
+            <point key="canvasLocation" x="1940" y="1005"/>
+        </scene>
+        <!--Más-->
+        <scene sceneID="Npq-jf-zV2">
+            <objects>
+                <viewController id="vCc-LO-uSu" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8g4-mY-nZ9"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kzy-C0-kNR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gEC-SQ-GyK">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo4-dU-BEo">
+                                <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Tamaño" id="SIC-7o-UBL"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eCV-ID-Icv"/>
+                                    <barButtonItem enabled="NO" title="Masa" id="7KL-i4-r5R"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pH2-wU-Odg"/>
+                                    <barButtonItem enabled="NO" title="Queso" id="t5r-31-g2l"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="mv1-4e-eBF"/>
+                                    <barButtonItem title="Más" id="GKP-VF-iBL"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="t4M-OB-sze"/>
+                                    <barButtonItem enabled="NO" title="Resumen" id="mZy-mg-ctf"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Kzy-C0-kNR" firstAttribute="top" secondItem="eo4-dU-BEo" secondAttribute="bottom" id="7S2-xr-Iid"/>
+                            <constraint firstItem="eo4-dU-BEo" firstAttribute="leading" secondItem="gEC-SQ-GyK" secondAttribute="leading" id="Wrc-qe-sfj"/>
+                            <constraint firstAttribute="trailing" secondItem="eo4-dU-BEo" secondAttribute="trailing" id="r5G-DM-OCQ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Más" id="Ibc-pn-roQ">
+                        <barButtonItem key="rightBarButtonItem" title="Siguiente" id="gph-Xs-c3G">
+                            <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <segue destination="SSe-49-w2H" kind="show" id="uJR-g4-VEG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="25a-Ts-c8w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="1005"/>
+        </scene>
+        <!--Resumen-->
+        <scene sceneID="3uP-jZ-Etc">
+            <objects>
+                <viewController id="SSe-49-w2H" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="LBY-HB-4hj"/>
+                        <viewControllerLayoutGuide type="bottom" id="mJM-mI-dwe"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m5U-RV-VeJ">
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qca-IG-eDU">
+                                <rect key="frame" x="0.0" y="492" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem enabled="NO" title="Tamaño" id="wLt-Sg-phg"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Qkz-0p-7je"/>
+                                    <barButtonItem enabled="NO" title="Masa" id="l41-65-q9K"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="oig-9P-1v6"/>
+                                    <barButtonItem enabled="NO" title="Queso" id="qBy-mo-M7H"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="Sei-Xz-38r"/>
+                                    <barButtonItem enabled="NO" title="Más" id="ooZ-vi-Puu"/>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="S38-kB-84X"/>
+                                    <barButtonItem title="Resumen" id="pid-7l-9en"/>
+                                </items>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mJM-mI-dwe" firstAttribute="top" secondItem="qca-IG-eDU" secondAttribute="bottom" id="I6g-be-kja"/>
+                            <constraint firstAttribute="trailing" secondItem="qca-IG-eDU" secondAttribute="trailing" id="prS-Ud-Fbk"/>
+                            <constraint firstItem="qca-IG-eDU" firstAttribute="leading" secondItem="m5U-RV-VeJ" secondAttribute="leading" id="w5t-LY-q3T"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Resumen" id="rfr-XE-1xY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z3X-uZ-vl3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3286" y="1005"/>
         </scene>
     </scenes>
 </document>
