@@ -17,21 +17,13 @@ class MasaViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print(ingredientes?.tamaño.description)
-        // Do any additional setup after loading the view.
+        masaPicker.selectRow(ingredientes.masa.rawValue, inComponent: 0, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        masaPicker.selectRow(ingredientes.tamaño.rawValue, inComponent: 0, animated: true)
-    }
-    
     
     // MARK: - UIPickerViewDataSource
     
@@ -54,7 +46,7 @@ class MasaViewController: UIViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let vc = segue.destinationViewController as! MasaViewController
+        let vc = segue.destinationViewController as! QuesoViewController
         vc.ingredientes = ingredientes
     }
 }

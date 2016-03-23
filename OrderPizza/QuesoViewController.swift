@@ -9,11 +9,15 @@
 import UIKit
 
 class QuesoViewController: UIViewController {
+    
+    var ingredientes: Ingredientes!
 
+    @IBOutlet weak var quesoPicker: UIPickerView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        quesoPicker.selectRow(ingredientes.queso.rawValue, inComponent: 0, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,15 +25,30 @@ class QuesoViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    
+    // MARK: - UIPickerViewDataSource
+    
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1
     }
-    */
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return Masa.count
+    }
+    
+    // MARK: - UIPickerViewDelegate
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return Queso(rawValue: row)?.description;
+    }
+    
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        ingredientes.queso = Queso(rawValue: row)!
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! MásViewController
+        vc.ingredientes = ingredientes
+    }
 
 }

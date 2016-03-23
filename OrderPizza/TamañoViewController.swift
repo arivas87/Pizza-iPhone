@@ -10,25 +10,19 @@ import UIKit
 
 class TamañoViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
-    @IBOutlet weak var tamañoPicker: UIPickerView!
-    
     var ingredientes = Ingredientes()
+    
+    @IBOutlet weak var tamañoPicker: UIPickerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Do any additional setup after loading the view.
+        tamañoPicker.selectRow(ingredientes.tamaño.rawValue, inComponent: 0, animated: true)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
-    }
-    
-    override func viewWillAppear(animated: Bool) {
-        super.viewWillAppear(animated)
-        
-        tamañoPicker.selectRow(ingredientes.tamaño.rawValue, inComponent: 0, animated: true)
     }
     
 

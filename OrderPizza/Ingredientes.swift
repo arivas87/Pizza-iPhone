@@ -48,17 +48,21 @@ enum Queso: Int {
     }
 }
 
-struct Ingredientes {
+let MAS = ["Jamón", "Pepperoni", "Pavo", "Salchicha", "Aceituna", "Cebolla", "Pimiento", "Piña", "Champiñones", "Carne"]
+
+class Ingredientes {
     
     var tamaño: Tamaño
     var masa: Masa
     var queso: Queso
-    var más: [String]
+    var más = [Int: Bool]()
     
     init() {
         tamaño = Tamaño.Mediana
         masa = Masa.Delgada
         queso = Queso.Mozarella
-        más = [String]()
+        for (index, _) in MAS.enumerate() {
+            más[index] = false
+        }
     }
 }

@@ -10,26 +10,53 @@ import UIKit
 
 class MásViewController: UIViewController {
 
+    var ingredientes: Ingredientes!
+    var count = 0
+    
+    @IBOutlet var switches: [UISwitch]!
+    @IBOutlet weak var botonSiguiente: UIBarButtonItem!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        for botón in switches {
+            botón.setOn(ingredientes.más[botón.tag]!, animated: false)
+            
+            if ingredientes.más[botón.tag]! {
+                count += 1
+            }
+        }
+        
+        if count < 1 {
+            botonSiguiente.enabled = false
+        }
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        let vc = segue.destinationViewController as! ResumenViewController
+        vc.ingredientes = ingredientes
     }
-    */
-
+    
+    @IBAction func cambioSelección(sender: UISwitch) {
+        // FIXME: Se pueden seleccionar más y sale raro
+        count = sender.on ? count + 1 : count - 1
+        
+        if count > 5 {
+            sender.setOn(false, animated: true)
+            count -= 1
+        } else {
+            ingredientes.más[sender.tag] = sender.on
+        }
+        
+        if count > 0 {
+            botonSiguiente.enabled = true
+        } else {
+            botonSiguiente.enabled = false
+        }
+    }
 }
