@@ -8,7 +8,7 @@
         <!--Tamaño-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TamañoViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -33,9 +33,19 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nNw-Xd-Er6">
+                                <rect key="frame" x="0.0" y="160" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="zh6-Sa-XYY"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="y3o-nj-8Pl"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="nNw-Xd-Er6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8ri-e7-dhu"/>
+                            <constraint firstItem="nNw-Xd-Er6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Dks-8F-uP3"/>
+                            <constraint firstAttribute="trailing" secondItem="nNw-Xd-Er6" secondAttribute="trailing" id="POd-bE-zUV"/>
                             <constraint firstAttribute="trailing" secondItem="EDc-rM-Dpf" secondAttribute="trailing" id="UVx-1I-Hbf"/>
                             <constraint firstItem="EDc-rM-Dpf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="bnw-sB-WwE"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EDc-rM-Dpf" secondAttribute="bottom" id="hBK-ry-3uH"/>
@@ -49,6 +59,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tamañoPicker" destination="nNw-Xd-Er6" id="o7K-GA-LIq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,7 +70,7 @@
         <!--Masa-->
         <scene sceneID="HtW-SY-ir6">
             <objects>
-                <viewController id="viU-gx-y9O" sceneMemberID="viewController">
+                <viewController id="viU-gx-y9O" customClass="MasaViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zIS-EQ-96c"/>
                         <viewControllerLayoutGuide type="bottom" id="tBM-lX-ZS2"/>
@@ -82,12 +95,22 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lki-xG-6Sv">
+                                <rect key="frame" x="0.0" y="160" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="viU-gx-y9O" id="DeY-dg-FuK"/>
+                                    <outlet property="delegate" destination="viU-gx-y9O" id="HUe-hb-Lb4"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="tBM-lX-ZS2" firstAttribute="top" secondItem="FZS-dM-UNf" secondAttribute="bottom" id="5qa-36-voc"/>
                             <constraint firstItem="FZS-dM-UNf" firstAttribute="leading" secondItem="zrC-iP-fXe" secondAttribute="leading" id="8Nc-FX-ikZ"/>
                             <constraint firstAttribute="trailing" secondItem="FZS-dM-UNf" secondAttribute="trailing" id="FlX-CS-x7q"/>
+                            <constraint firstAttribute="trailing" secondItem="lki-xG-6Sv" secondAttribute="trailing" id="YZc-tC-YPI"/>
+                            <constraint firstItem="lki-xG-6Sv" firstAttribute="centerY" secondItem="zrC-iP-fXe" secondAttribute="centerY" id="gha-wW-kpE"/>
+                            <constraint firstItem="lki-xG-6Sv" firstAttribute="leading" secondItem="zrC-iP-fXe" secondAttribute="leading" id="nck-ks-hB4"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Masa" id="MZo-WP-Buf">
@@ -98,6 +121,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="masaPicker" destination="lki-xG-6Sv" id="rQk-jf-CN3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="soL-Hk-OeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -126,7 +152,7 @@
         <!--Queso-->
         <scene sceneID="aLN-bJ-ZL7">
             <objects>
-                <viewController id="4Nn-wI-vFB" sceneMemberID="viewController">
+                <viewController id="4Nn-wI-vFB" customClass="QuesoViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hAU-bn-kY8"/>
                         <viewControllerLayoutGuide type="bottom" id="qeB-IT-Mre"/>
@@ -151,12 +177,22 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </toolbar>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dAz-6H-lpk">
+                                <rect key="frame" x="0.0" y="160" width="600" height="216"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="4Nn-wI-vFB" id="Bhk-3Z-0HH"/>
+                                    <outlet property="delegate" destination="4Nn-wI-vFB" id="dlb-gy-3gc"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="dAz-6H-lpk" firstAttribute="centerY" secondItem="xb4-1x-t8L" secondAttribute="centerY" id="I46-V1-TUT"/>
                             <constraint firstItem="qeB-IT-Mre" firstAttribute="top" secondItem="hzG-kq-wkO" secondAttribute="bottom" id="WJj-Vf-3ff"/>
+                            <constraint firstAttribute="trailing" secondItem="dAz-6H-lpk" secondAttribute="trailing" id="l2b-Qm-vNZ"/>
                             <constraint firstAttribute="trailing" secondItem="hzG-kq-wkO" secondAttribute="trailing" id="sdR-9D-Ob7"/>
                             <constraint firstItem="hzG-kq-wkO" firstAttribute="leading" secondItem="xb4-1x-t8L" secondAttribute="leading" id="uny-TD-L0H"/>
+                            <constraint firstItem="dAz-6H-lpk" firstAttribute="leading" secondItem="xb4-1x-t8L" secondAttribute="leading" id="zfA-VF-vfd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Queso" id="t7g-jb-ahD">
@@ -175,7 +211,7 @@
         <!--Más-->
         <scene sceneID="Npq-jf-zV2">
             <objects>
-                <viewController id="vCc-LO-uSu" sceneMemberID="viewController">
+                <viewController id="vCc-LO-uSu" customClass="MásViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8g4-mY-nZ9"/>
                         <viewControllerLayoutGuide type="bottom" id="Kzy-C0-kNR"/>
@@ -224,7 +260,7 @@
         <!--Resumen-->
         <scene sceneID="3uP-jZ-Etc">
             <objects>
-                <viewController id="SSe-49-w2H" sceneMemberID="viewController">
+                <viewController id="SSe-49-w2H" customClass="ResumenViewController" customModule="OrderPizza" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LBY-HB-4hj"/>
                         <viewControllerLayoutGuide type="bottom" id="mJM-mI-dwe"/>

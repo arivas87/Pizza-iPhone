@@ -7,17 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4D9B091CA2823D00E95642 /* TamañoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B081CA2823D00E95642 /* TamañoViewController.swift */; };
+		AC4D9B0C1CA2825700E95642 /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B0B1CA2825700E95642 /* MasaViewController.swift */; };
+		AC4D9B0F1CA2829B00E95642 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B0E1CA2829B00E95642 /* QuesoViewController.swift */; };
+		AC4D9B111CA282A500E95642 /* MásViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B101CA282A500E95642 /* MásViewController.swift */; };
+		AC4D9B131CA282B000E95642 /* ResumenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B121CA282B000E95642 /* ResumenViewController.swift */; };
+		AC4D9B161CA2842600E95642 /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B151CA2842600E95642 /* Ingredientes.swift */; };
 		ACF25DD51CA1301C00B69A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF25DD41CA1301C00B69A9A /* AppDelegate.swift */; };
-		ACF25DD71CA1301C00B69A9A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF25DD61CA1301C00B69A9A /* ViewController.swift */; };
 		ACF25DDA1CA1301C00B69A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF25DD81CA1301C00B69A9A /* Main.storyboard */; };
 		ACF25DDC1CA1301C00B69A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF25DDB1CA1301C00B69A9A /* Assets.xcassets */; };
 		ACF25DDF1CA1301C00B69A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF25DDD1CA1301C00B69A9A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AC4D9B081CA2823D00E95642 /* TamañoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TamañoViewController.swift"; sourceTree = "<group>"; };
+		AC4D9B0B1CA2825700E95642 /* MasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaViewController.swift; sourceTree = "<group>"; };
+		AC4D9B0E1CA2829B00E95642 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
+		AC4D9B101CA282A500E95642 /* MásViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MásViewController.swift"; sourceTree = "<group>"; };
+		AC4D9B121CA282B000E95642 /* ResumenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumenViewController.swift; sourceTree = "<group>"; };
+		AC4D9B151CA2842600E95642 /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
 		ACF25DD11CA1301C00B69A9A /* OrderPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF25DD41CA1301C00B69A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ACF25DD61CA1301C00B69A9A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ACF25DD91CA1301C00B69A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ACF25DDB1CA1301C00B69A9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ACF25DDE1CA1301C00B69A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +45,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC4D9B0A1CA2824200E95642 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AC4D9B0B1CA2825700E95642 /* MasaViewController.swift */,
+				AC4D9B081CA2823D00E95642 /* TamañoViewController.swift */,
+				AC4D9B0E1CA2829B00E95642 /* QuesoViewController.swift */,
+				AC4D9B101CA282A500E95642 /* MásViewController.swift */,
+				AC4D9B121CA282B000E95642 /* ResumenViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AC4D9B0D1CA2825B00E95642 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				ACF25DDD1CA1301C00B69A9A /* LaunchScreen.storyboard */,
+				ACF25DD81CA1301C00B69A9A /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AC4D9B141CA2841500E95642 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AC4D9B151CA2842600E95642 /* Ingredientes.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		ACF25DC81CA1301C00B69A9A = {
 			isa = PBXGroup;
 			children = (
@@ -54,11 +93,11 @@
 		ACF25DD31CA1301C00B69A9A /* OrderPizza */ = {
 			isa = PBXGroup;
 			children = (
+				AC4D9B141CA2841500E95642 /* Models */,
+				AC4D9B0D1CA2825B00E95642 /* Views */,
+				AC4D9B0A1CA2824200E95642 /* Controllers */,
 				ACF25DD41CA1301C00B69A9A /* AppDelegate.swift */,
-				ACF25DD61CA1301C00B69A9A /* ViewController.swift */,
-				ACF25DD81CA1301C00B69A9A /* Main.storyboard */,
 				ACF25DDB1CA1301C00B69A9A /* Assets.xcassets */,
-				ACF25DDD1CA1301C00B69A9A /* LaunchScreen.storyboard */,
 				ACF25DE01CA1301C00B69A9A /* Info.plist */,
 			);
 			path = OrderPizza;
@@ -135,8 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACF25DD71CA1301C00B69A9A /* ViewController.swift in Sources */,
+				AC4D9B0F1CA2829B00E95642 /* QuesoViewController.swift in Sources */,
+				AC4D9B0C1CA2825700E95642 /* MasaViewController.swift in Sources */,
+				AC4D9B091CA2823D00E95642 /* TamañoViewController.swift in Sources */,
 				ACF25DD51CA1301C00B69A9A /* AppDelegate.swift in Sources */,
+				AC4D9B161CA2842600E95642 /* Ingredientes.swift in Sources */,
+				AC4D9B131CA282B000E95642 /* ResumenViewController.swift in Sources */,
+				AC4D9B111CA282A500E95642 /* MásViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +330,7 @@
 				ACF25DE51CA1301C00B69A9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
