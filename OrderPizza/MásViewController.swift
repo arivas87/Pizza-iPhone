@@ -46,12 +46,26 @@ class MásViewController: UIViewController {
         // FIXME: Se pueden seleccionar más y sale raro
         count = sender.on ? count + 1 : count - 1
         
-        if count > 5 {
-            sender.setOn(false, animated: true)
+        if count == 5 {
+            for botón in switches {
+                if !botón.on {
+                    botón.userInteractionEnabled = false
+                }
+            }
+        } else {
+            for botón in switches {
+                botón.userInteractionEnabled = true
+            }
+        }
+        
+        ingredientes.más[sender.tag] = sender.on
+        
+        /*if count > 5 {
+            sender.setOn(false, animated: false)
             count -= 1
         } else {
             ingredientes.más[sender.tag] = sender.on
-        }
+        }*/
         
         if count > 0 {
             botonSiguiente.enabled = true

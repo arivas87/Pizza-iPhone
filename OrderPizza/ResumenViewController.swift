@@ -42,5 +42,12 @@ class ResumenViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    // TODO: Mostrar pantalla de confirmación y volver al inicio
+    @IBAction func pulsoConfirmar(sender: AnyObject) {
+        let alert = UIAlertController(title: "Oido cocina", message: "Su pedido ha sido recibido. Muchas gracias.", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "Aceptar", style: .Default, handler: { alert in
+            self.performSegueWithIdentifier("volverAlInicio", sender: nil)
+        }))
+        
+        presentViewController(alert, animated: true, completion: nil)
+    }
 }
