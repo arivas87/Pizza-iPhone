@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC4D2C301CAA995200B249CD /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC4D2C2E1CAA995200B249CD /* Interface.storyboard */; };
+		AC4D2C321CAA995200B249CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4D2C311CAA995200B249CD /* Assets.xcassets */; };
+		AC4D2C391CAA995200B249CD /* WatchPizza Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AC4D2C381CAA995200B249CD /* WatchPizza Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AC4D2C3E1CAA995200B249CD /* TamañoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D2C3D1CAA995200B249CD /* TamañoController.swift */; };
+		AC4D2C401CAA995200B249CD /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D2C3F1CAA995200B249CD /* ExtensionDelegate.swift */; };
+		AC4D2C421CAA995200B249CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC4D2C411CAA995200B249CD /* Assets.xcassets */; };
+		AC4D2C461CAA995200B249CD /* WatchPizza.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = AC4D2C2C1CAA995200B249CD /* WatchPizza.app */; };
+		AC4D2C501CAA9ACD00B249CD /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B151CA2842600E95642 /* Ingredientes.swift */; };
+		AC4D2C521CAAA47900B249CD /* MasaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D2C511CAAA47900B249CD /* MasaController.swift */; };
 		AC4D9B091CA2823D00E95642 /* TamañoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B081CA2823D00E95642 /* TamañoViewController.swift */; };
 		AC4D9B0C1CA2825700E95642 /* MasaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B0B1CA2825700E95642 /* MasaViewController.swift */; };
 		AC4D9B0F1CA2829B00E95642 /* QuesoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B0E1CA2829B00E95642 /* QuesoViewController.swift */; };
@@ -19,7 +28,59 @@
 		ACF25DDF1CA1301C00B69A9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF25DDD1CA1301C00B69A9A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		AC4D2C3A1CAA995200B249CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF25DC91CA1301C00B69A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4D2C371CAA995200B249CD;
+			remoteInfo = "WatchPizza Extension";
+		};
+		AC4D2C441CAA995200B249CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACF25DC91CA1301C00B69A9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC4D2C2B1CAA995200B249CD;
+			remoteInfo = WatchPizza;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AC4D2C4C1CAA995200B249CD /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AC4D2C391CAA995200B249CD /* WatchPizza Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4D2C4E1CAA995200B249CD /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				AC4D2C461CAA995200B249CD /* WatchPizza.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		AC4D2C2C1CAA995200B249CD /* WatchPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4D2C2F1CAA995200B249CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AC4D2C311CAA995200B249CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC4D2C331CAA995200B249CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4D2C381CAA995200B249CD /* WatchPizza Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchPizza Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC4D2C3D1CAA995200B249CD /* TamañoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TamañoController.swift"; sourceTree = "<group>"; };
+		AC4D2C3F1CAA995200B249CD /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		AC4D2C411CAA995200B249CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC4D2C431CAA995200B249CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4D2C511CAAA47900B249CD /* MasaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaController.swift; sourceTree = "<group>"; };
 		AC4D9B081CA2823D00E95642 /* TamañoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TamañoViewController.swift"; sourceTree = "<group>"; };
 		AC4D9B0B1CA2825700E95642 /* MasaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasaViewController.swift; sourceTree = "<group>"; };
 		AC4D9B0E1CA2829B00E95642 /* QuesoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +96,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		AC4D2C351CAA995200B249CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACF25DCE1CA1301C00B69A9A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,6 +113,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AC4D2C2D1CAA995200B249CD /* WatchPizza */ = {
+			isa = PBXGroup;
+			children = (
+				AC4D2C2E1CAA995200B249CD /* Interface.storyboard */,
+				AC4D2C311CAA995200B249CD /* Assets.xcassets */,
+				AC4D2C331CAA995200B249CD /* Info.plist */,
+			);
+			path = WatchPizza;
+			sourceTree = "<group>";
+		};
+		AC4D2C3C1CAA995200B249CD /* WatchPizza Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AC4D2C3D1CAA995200B249CD /* TamañoController.swift */,
+				AC4D2C511CAAA47900B249CD /* MasaController.swift */,
+				AC4D2C3F1CAA995200B249CD /* ExtensionDelegate.swift */,
+				AC4D2C411CAA995200B249CD /* Assets.xcassets */,
+				AC4D2C431CAA995200B249CD /* Info.plist */,
+			);
+			path = "WatchPizza Extension";
+			sourceTree = "<group>";
+		};
 		AC4D9B0A1CA2824200E95642 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -78,6 +168,8 @@
 			isa = PBXGroup;
 			children = (
 				ACF25DD31CA1301C00B69A9A /* OrderPizza */,
+				AC4D2C2D1CAA995200B249CD /* WatchPizza */,
+				AC4D2C3C1CAA995200B249CD /* WatchPizza Extension */,
 				ACF25DD21CA1301C00B69A9A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				ACF25DD11CA1301C00B69A9A /* OrderPizza.app */,
+				AC4D2C2C1CAA995200B249CD /* WatchPizza.app */,
+				AC4D2C381CAA995200B249CD /* WatchPizza Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +200,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		AC4D2C2B1CAA995200B249CD /* WatchPizza */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4D2C4D1CAA995200B249CD /* Build configuration list for PBXNativeTarget "WatchPizza" */;
+			buildPhases = (
+				AC4D2C2A1CAA995200B249CD /* Resources */,
+				AC4D2C4C1CAA995200B249CD /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC4D2C3B1CAA995200B249CD /* PBXTargetDependency */,
+			);
+			name = WatchPizza;
+			productName = WatchPizza;
+			productReference = AC4D2C2C1CAA995200B249CD /* WatchPizza.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		AC4D2C371CAA995200B249CD /* WatchPizza Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC4D2C4B1CAA995200B249CD /* Build configuration list for PBXNativeTarget "WatchPizza Extension" */;
+			buildPhases = (
+				AC4D2C341CAA995200B249CD /* Sources */,
+				AC4D2C351CAA995200B249CD /* Frameworks */,
+				AC4D2C361CAA995200B249CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchPizza Extension";
+			productName = "WatchPizza Extension";
+			productReference = AC4D2C381CAA995200B249CD /* WatchPizza Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		ACF25DD01CA1301C00B69A9A /* OrderPizza */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACF25DE31CA1301C00B69A9A /* Build configuration list for PBXNativeTarget "OrderPizza" */;
@@ -113,10 +241,12 @@
 				ACF25DCD1CA1301C00B69A9A /* Sources */,
 				ACF25DCE1CA1301C00B69A9A /* Frameworks */,
 				ACF25DCF1CA1301C00B69A9A /* Resources */,
+				AC4D2C4E1CAA995200B249CD /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AC4D2C451CAA995200B249CD /* PBXTargetDependency */,
 			);
 			name = OrderPizza;
 			productName = OrderPizza;
@@ -129,10 +259,16 @@
 		ACF25DC91CA1301C00B69A9A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Arturo Rivas";
 				TargetAttributes = {
+					AC4D2C2B1CAA995200B249CD = {
+						CreatedOnToolsVersion = 7.3;
+					};
+					AC4D2C371CAA995200B249CD = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					ACF25DD01CA1301C00B69A9A = {
 						CreatedOnToolsVersion = 7.2.1;
 					};
@@ -152,11 +288,30 @@
 			projectRoot = "";
 			targets = (
 				ACF25DD01CA1301C00B69A9A /* OrderPizza */,
+				AC4D2C2B1CAA995200B249CD /* WatchPizza */,
+				AC4D2C371CAA995200B249CD /* WatchPizza Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		AC4D2C2A1CAA995200B249CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4D2C321CAA995200B249CD /* Assets.xcassets in Resources */,
+				AC4D2C301CAA995200B249CD /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC4D2C361CAA995200B249CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4D2C421CAA995200B249CD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACF25DCF1CA1301C00B69A9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +325,17 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		AC4D2C341CAA995200B249CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC4D2C501CAA9ACD00B249CD /* Ingredientes.swift in Sources */,
+				AC4D2C521CAAA47900B249CD /* MasaController.swift in Sources */,
+				AC4D2C401CAA995200B249CD /* ExtensionDelegate.swift in Sources */,
+				AC4D2C3E1CAA995200B249CD /* TamañoController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACF25DCD1CA1301C00B69A9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -186,7 +352,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		AC4D2C3B1CAA995200B249CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4D2C371CAA995200B249CD /* WatchPizza Extension */;
+			targetProxy = AC4D2C3A1CAA995200B249CD /* PBXContainerItemProxy */;
+		};
+		AC4D2C451CAA995200B249CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC4D2C2B1CAA995200B249CD /* WatchPizza */;
+			targetProxy = AC4D2C441CAA995200B249CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		AC4D2C2E1CAA995200B249CD /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC4D2C2F1CAA995200B249CD /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		ACF25DD81CA1301C00B69A9A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -206,6 +393,70 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		AC4D2C471CAA995200B249CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchPizza_Extension;
+				INFOPLIST_FILE = WatchPizza/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturorivas.OrderPizza.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		AC4D2C481CAA995200B249CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = WatchPizza_Extension;
+				INFOPLIST_FILE = WatchPizza/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturorivas.OrderPizza.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		AC4D2C491CAA995200B249CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "WatchPizza Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturorivas.OrderPizza.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		AC4D2C4A1CAA995200B249CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "WatchPizza Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arturorivas.OrderPizza.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		ACF25DE11CA1301C00B69A9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -314,6 +565,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		AC4D2C4B1CAA995200B249CD /* Build configuration list for PBXNativeTarget "WatchPizza Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4D2C491CAA995200B249CD /* Debug */,
+				AC4D2C4A1CAA995200B249CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AC4D2C4D1CAA995200B249CD /* Build configuration list for PBXNativeTarget "WatchPizza" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC4D2C471CAA995200B249CD /* Debug */,
+				AC4D2C481CAA995200B249CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		ACF25DCC1CA1301C00B69A9A /* Build configuration list for PBXProject "OrderPizza" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

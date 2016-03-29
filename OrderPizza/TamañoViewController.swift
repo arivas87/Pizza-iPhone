@@ -39,7 +39,7 @@ class TamañoViewController: UIViewController, UIPickerViewDataSource, UIPickerV
     // MARK: - UIPickerViewDelegate
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return Tamaño(rawValue: row)?.description;
+        return Tamaño(rawValue: row)?.description
     }
     
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {

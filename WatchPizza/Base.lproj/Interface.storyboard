@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
+    </dependencies>
+    <scenes>
+        <!--Tamaño-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="tamaño" title="Tamaño" id="AgC-eL-Hgc" customClass="TamañoController" customModule="WatchPizza_Extension">
+                    <items>
+                        <label alignment="left" text="Elige el tamaño de tu pizza:" textAlignment="center" numberOfLines="0" id="dsv-9m-NCp"/>
+                        <picker height="100" alignment="left" id="8S0-xb-WLm">
+                            <connections>
+                                <action selector="cambiaTamaño:" destination="AgC-eL-Hgc" id="BKf-ia-IAD"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="L6f-Ul-RXQ">
+                            <connections>
+                                <action selector="pulsoSiguiente" destination="AgC-eL-Hgc" id="gBo-my-n5U"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="tamañoPicker" destination="8S0-xb-WLm" id="S2R-GU-k2z"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="266" y="318"/>
+        </scene>
+        <!--Masa-->
+        <scene sceneID="pIQ-eb-GaC">
+            <objects>
+                <controller identifier="masa" title="Masa" id="0bv-re-cPj" customClass="MasaController" customModule="WatchPizza_Extension">
+                    <items>
+                        <label alignment="left" text="Elige el queso que llevará tu pizza:" textAlignment="center" numberOfLines="0" id="UVT-nc-8U4"/>
+                        <picker height="100" alignment="left" id="4aq-Su-xMm">
+                            <connections>
+                                <action selector="cambiaMasa:" destination="0bv-re-cPj" id="9mm-Qw-bcn"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="TVh-FD-x5B">
+                            <connections>
+                                <action selector="pulsoSiguiente" destination="0bv-re-cPj" id="qMT-or-3Y0"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="masaPicker" destination="4aq-Su-xMm" id="lH7-lV-hLa"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="527" y="318"/>
+        </scene>
+    </scenes>
+</document>
