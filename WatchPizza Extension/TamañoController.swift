@@ -29,7 +29,6 @@ class TamañoController: WKInterfaceController {
         for tamaños in 0...Tamaño.count - 1 {
             let pickerItem = WKPickerItem()
             pickerItem.title = Tamaño(rawValue: tamaños)?.description
-            pickerItem.caption = "Ni idea"
             pickerItems.append(pickerItem)
         }
         

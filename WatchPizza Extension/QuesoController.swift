@@ -1,8 +1,8 @@
 //
-//  MasaController.swift
+//  QuesoController.swift
 //  OrderPizza
 //
-//  Created by Arturo Rivas on 29/3/16.
+//  Created by Arturo Rivas on 30/3/16.
 //  Copyright © 2016 Arturo Rivas. All rights reserved.
 //
 
@@ -10,9 +10,9 @@ import WatchKit
 import Foundation
 
 
-class MasaController: WKInterfaceController {
+class QuesoController: WKInterfaceController {
 
-    @IBOutlet var masaPicker: WKInterfacePicker!
+    @IBOutlet var quesoPicker: WKInterfacePicker!
     
     var ingredientes: Ingredientes!
     
@@ -26,14 +26,14 @@ class MasaController: WKInterfaceController {
         super.willActivate()
         
         var pickerItems = [WKPickerItem]()
-        for masas in 0...Masa.count - 1 {
+        for quesos in 0...Queso.count - 1 {
             let pickerItem = WKPickerItem()
-            pickerItem.title = Masa(rawValue: masas)?.description
+            pickerItem.title = Queso(rawValue: quesos)?.description
             pickerItems.append(pickerItem)
         }
         
-        masaPicker.setItems(pickerItems)
-        masaPicker.setSelectedItemIndex(ingredientes.masa.rawValue)
+        quesoPicker.setItems(pickerItems)
+        quesoPicker.setSelectedItemIndex(ingredientes.tamaño.rawValue)
     }
     
     override func didDeactivate() {
@@ -43,11 +43,11 @@ class MasaController: WKInterfaceController {
     
     @IBAction func pulsoSiguiente() {
         let context = ingredientes
-        pushControllerWithName("queso", context: context)
+        pushControllerWithName("más", context: context)
     }
     
-    @IBAction func cambiaMasa(value: Int) {
-        ingredientes.masa = Masa(rawValue: value)!
+    @IBAction func cambiaQueso(value: Int) {
+        ingredientes.queso = Queso(rawValue: value)!
     }
 
 }

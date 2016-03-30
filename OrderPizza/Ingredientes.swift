@@ -59,8 +59,8 @@ class Ingredientes {
     
     init() {
         tamaño = Tamaño.Mediana
-        masa = Masa.Delgada
-        queso = Queso.Mozarella
+        masa = Masa.Crujiente
+        queso = Queso.Cheddar
         for (index, _) in MAS.enumerate() {
             más[index] = false
         }

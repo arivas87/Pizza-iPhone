@@ -22,6 +22,8 @@
 		AC4D9B111CA282A500E95642 /* MásViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B101CA282A500E95642 /* MásViewController.swift */; };
 		AC4D9B131CA282B000E95642 /* ResumenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B121CA282B000E95642 /* ResumenViewController.swift */; };
 		AC4D9B161CA2842600E95642 /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4D9B151CA2842600E95642 /* Ingredientes.swift */; };
+		ACC8EB231CABAB520073227D /* QuesoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8EB221CABAB520073227D /* QuesoController.swift */; };
+		ACC8EB251CABAF390073227D /* MásController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8EB241CABAF390073227D /* MásController.swift */; };
 		ACF25DD51CA1301C00B69A9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF25DD41CA1301C00B69A9A /* AppDelegate.swift */; };
 		ACF25DDA1CA1301C00B69A9A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACF25DD81CA1301C00B69A9A /* Main.storyboard */; };
 		ACF25DDC1CA1301C00B69A9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACF25DDB1CA1301C00B69A9A /* Assets.xcassets */; };
@@ -87,6 +89,8 @@
 		AC4D9B101CA282A500E95642 /* MásViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MásViewController.swift"; sourceTree = "<group>"; };
 		AC4D9B121CA282B000E95642 /* ResumenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResumenViewController.swift; sourceTree = "<group>"; };
 		AC4D9B151CA2842600E95642 /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
+		ACC8EB221CABAB520073227D /* QuesoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuesoController.swift; sourceTree = "<group>"; };
+		ACC8EB241CABAF390073227D /* MásController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MásController.swift"; sourceTree = "<group>"; };
 		ACF25DD11CA1301C00B69A9A /* OrderPizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrderPizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACF25DD41CA1301C00B69A9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACF25DD91CA1301C00B69A9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -131,6 +135,8 @@
 				AC4D2C3F1CAA995200B249CD /* ExtensionDelegate.swift */,
 				AC4D2C411CAA995200B249CD /* Assets.xcassets */,
 				AC4D2C431CAA995200B249CD /* Info.plist */,
+				ACC8EB221CABAB520073227D /* QuesoController.swift */,
+				ACC8EB241CABAF390073227D /* MásController.swift */,
 			);
 			path = "WatchPizza Extension";
 			sourceTree = "<group>";
@@ -331,6 +337,8 @@
 			files = (
 				AC4D2C501CAA9ACD00B249CD /* Ingredientes.swift in Sources */,
 				AC4D2C521CAAA47900B249CD /* MasaController.swift in Sources */,
+				ACC8EB231CABAB520073227D /* QuesoController.swift in Sources */,
+				ACC8EB251CABAF390073227D /* MásController.swift in Sources */,
 				AC4D2C401CAA995200B249CD /* ExtensionDelegate.swift in Sources */,
 				AC4D2C3E1CAA995200B249CD /* TamañoController.swift in Sources */,
 			);
@@ -572,6 +580,7 @@
 				AC4D2C4A1CAA995200B249CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AC4D2C4D1CAA995200B249CD /* Build configuration list for PBXNativeTarget "WatchPizza" */ = {
 			isa = XCConfigurationList;
@@ -580,6 +589,7 @@
 				AC4D2C481CAA995200B249CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		ACF25DCC1CA1301C00B69A9A /* Build configuration list for PBXProject "OrderPizza" */ = {
 			isa = XCConfigurationList;

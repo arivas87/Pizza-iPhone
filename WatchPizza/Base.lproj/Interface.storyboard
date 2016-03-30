@@ -34,7 +34,7 @@
             <objects>
                 <controller identifier="masa" title="Masa" id="0bv-re-cPj" customClass="MasaController" customModule="WatchPizza_Extension">
                     <items>
-                        <label alignment="left" text="Elige el queso que llevará tu pizza:" textAlignment="center" numberOfLines="0" id="UVT-nc-8U4"/>
+                        <label alignment="left" text="Elige el tipo de masa de tu pizza:" textAlignment="center" numberOfLines="0" id="UVT-nc-8U4"/>
                         <picker height="100" alignment="left" id="4aq-Su-xMm">
                             <connections>
                                 <action selector="cambiaMasa:" destination="0bv-re-cPj" id="9mm-Qw-bcn"/>
@@ -52,6 +52,112 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="527" y="318"/>
+        </scene>
+        <!--Queso-->
+        <scene sceneID="NbW-nb-mvh">
+            <objects>
+                <controller identifier="queso" title="Queso" id="JTM-5N-PJB" customClass="QuesoController" customModule="WatchPizza_Extension">
+                    <items>
+                        <label alignment="left" text="Elige el queso que llevará tu pizza:" textAlignment="center" numberOfLines="0" id="61O-DX-H4x"/>
+                        <picker height="100" alignment="left" id="6Sw-j6-0Ee">
+                            <connections>
+                                <action selector="cambiaQueso:" destination="JTM-5N-PJB" id="9DC-6k-xKf"/>
+                            </connections>
+                        </picker>
+                        <button width="1" alignment="left" title="Siguiente" id="fZC-wA-DHU">
+                            <connections>
+                                <action selector="pulsoSiguiente" destination="JTM-5N-PJB" id="oUI-Aw-hqU"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="quesoPicker" destination="6Sw-j6-0Ee" id="EFA-IR-WkC"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="801" y="317.5"/>
+        </scene>
+        <!--Más-->
+        <scene sceneID="xka-eh-Pf5">
+            <objects>
+                <controller identifier="más" title="Más" id="Xfa-42-jan" customClass="MásController" customModule="WatchPizza_Extension">
+                    <items>
+                        <label alignment="left" text="Seleccione de 1 a 5 de los siguientes ingredientes:" textAlignment="center" numberOfLines="0" id="eAU-Bo-uQC"/>
+                        <group width="1" alignment="left" id="FVV-FN-3Yk">
+                            <items>
+                                <switch width="1" alignment="left" value="YES" title="Jamón" id="Cec-rr-lGD">
+                                    <connections>
+                                        <action selector="pulsoJamón:" destination="Xfa-42-jan" id="JTb-HL-l2b"/>
+                                    </connections>
+                                </switch>
+                            </items>
+                        </group>
+                        <switch width="1" alignment="left" value="YES" title="Pepperoni" id="oWp-Ai-vWc">
+                            <connections>
+                                <action selector="pulsoPepperoni:" destination="Xfa-42-jan" id="4RS-AS-J3G"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Pavo" id="LcF-fd-R4i">
+                            <connections>
+                                <action selector="pulsoPavo:" destination="Xfa-42-jan" id="UuZ-fP-cNQ"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Salchicha" id="yKX-M3-RLL">
+                            <connections>
+                                <action selector="pulsoSalchicha:" destination="Xfa-42-jan" id="C3C-ro-tfz"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Aceituna" id="HgP-0D-bxY">
+                            <connections>
+                                <action selector="pulsoAceituna:" destination="Xfa-42-jan" id="hj0-BL-sv3"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Cebolla" id="aMY-ya-s0M">
+                            <connections>
+                                <action selector="pulsoCebolla:" destination="Xfa-42-jan" id="zZb-cR-YHS"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Pimiento" id="9xt-cm-doc">
+                            <connections>
+                                <action selector="pulsoPimiento:" destination="Xfa-42-jan" id="4Cr-c9-6NS"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Piña" id="92Q-2A-lTv">
+                            <connections>
+                                <action selector="pulsoPiña:" destination="Xfa-42-jan" id="bVn-Yx-GFJ"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Champiñones" id="f39-f5-iwW">
+                            <connections>
+                                <action selector="pulsoChampiñones:" destination="Xfa-42-jan" id="ZmQ-Fm-iua"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" alignment="left" value="YES" title="Carne" id="6Rc-cW-YjJ">
+                            <connections>
+                                <action selector="pulsoCarne:" destination="Xfa-42-jan" id="ypr-mq-eLk"/>
+                            </connections>
+                        </switch>
+                        <button width="1" alignment="left" title="Siguiente" id="UPC-0E-kL1">
+                            <connections>
+                                <action selector="pulsoSiguiente" destination="Xfa-42-jan" id="hwI-ID-TF2"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="switchAceituna" destination="HgP-0D-bxY" id="xvh-OU-mDb"/>
+                        <outlet property="switchCampiñones" destination="f39-f5-iwW" id="oaC-Db-OMA"/>
+                        <outlet property="switchCarne" destination="6Rc-cW-YjJ" id="4El-7A-8Mu"/>
+                        <outlet property="switchCebolla" destination="aMY-ya-s0M" id="bNF-Qw-Kbs"/>
+                        <outlet property="switchJamón" destination="Cec-rr-lGD" id="Mfp-Dm-AOK"/>
+                        <outlet property="switchPavo" destination="LcF-fd-R4i" id="u8w-oP-Pea"/>
+                        <outlet property="switchPepperoni" destination="oWp-Ai-vWc" id="Udy-Ca-bLC"/>
+                        <outlet property="switchPimiento" destination="9xt-cm-doc" id="P1A-oa-WRw"/>
+                        <outlet property="switchPiña" destination="92Q-2A-lTv" id="TUw-VA-Zpm"/>
+                        <outlet property="switchSalchicha" destination="yKX-M3-RLL" id="0gz-yP-Kec"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1083" y="318"/>
         </scene>
     </scenes>
 </document>
