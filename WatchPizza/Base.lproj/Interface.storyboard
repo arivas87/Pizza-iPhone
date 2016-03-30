@@ -163,9 +163,55 @@
         <!--Resumen-->
         <scene sceneID="SZr-zJ-IIp">
             <objects>
-                <controller identifier="resumen" title="Resumen" id="uNv-N3-s0W"/>
+                <controller identifier="resumen" title="Resumen" id="uNv-N3-s0W" customClass="ResumenController" customModule="WatchPizza_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="zm2-Bu-1RS">
+                            <items>
+                                <label width="61.5" alignment="left" text="Tamaño" id="SP4-Np-Fq6">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Label" id="s15-hM-J1s"/>
+                        <group width="1" alignment="left" id="Qqt-4w-LQe">
+                            <items>
+                                <label width="136" alignment="left" text="Masa" id="7fa-87-bwn">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Label" id="Rq4-vx-uKZ"/>
+                        <group width="1" alignment="left" id="jzO-p2-N6T">
+                            <items>
+                                <label width="61.5" alignment="left" text="Queso" id="CGL-Bv-J5x">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Label" id="8RA-Tu-OO4"/>
+                        <group width="1" alignment="left" id="rP0-aP-Cch">
+                            <items>
+                                <label width="61.5" alignment="left" text="Más" id="vzj-zU-z3z">
+                                    <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <label width="1" alignment="left" text="Label" numberOfLines="0" id="YdC-WH-UOq"/>
+                        <button width="1" alignment="left" title="Confirmar" id="ATG-Nf-p2H">
+                            <connections>
+                                <action selector="pulsoConfirmar" destination="uNv-N3-s0W" id="ZV0-FZ-Kbi"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="masaLabel" destination="Rq4-vx-uKZ" id="rPO-iH-x2o"/>
+                        <outlet property="másLabel" destination="YdC-WH-UOq" id="bPW-OB-MUv"/>
+                        <outlet property="quesoLabel" destination="8RA-Tu-OO4" id="bmp-l2-Edc"/>
+                        <outlet property="tamañoLabel" destination="s15-hM-J1s" id="9Ge-DJ-OaW"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="1398" y="304"/>
+            <point key="canvasLocation" x="1398" y="303.5"/>
         </scene>
     </scenes>
 </document>

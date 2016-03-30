@@ -65,69 +65,70 @@ class MásController: WKInterfaceController {
     @IBAction func pulsoJamón(value: Bool) {
         ingredientes.más[0] = value
         
-        bloqueoBotones(switchJamón)
+        bloqueoBotones(switchJamón, posición: 0)
     }
     
     @IBAction func pulsoPepperoni(value: Bool) {
         ingredientes.más[1] = value
         
-        bloqueoBotones(switchPepperoni)
+        bloqueoBotones(switchPepperoni, posición: 1)
     }
     
     @IBAction func pulsoPavo(value: Bool) {
         ingredientes.más[2] = value
         
-        bloqueoBotones(switchPavo)
+        bloqueoBotones(switchPavo, posición: 2)
     }
     
     @IBAction func pulsoSalchicha(value: Bool) {
         ingredientes.más[3] = value
         
-        bloqueoBotones(switchSalchicha)
+        bloqueoBotones(switchSalchicha, posición: 3)
     }
     
     @IBAction func pulsoAceituna(value: Bool) {
         ingredientes.más[4] = value
         
-        bloqueoBotones(switchAceituna)
+        bloqueoBotones(switchAceituna, posición: 4)
     }
     
     @IBAction func pulsoCebolla(value: Bool) {
         ingredientes.más[5] = value
         
-        bloqueoBotones(switchCebolla)
+        bloqueoBotones(switchCebolla, posición: 5)
     }
 
     @IBAction func pulsoPimiento(value: Bool) {
         ingredientes.más[6] = value
         
-        bloqueoBotones(switchPimiento)
+        bloqueoBotones(switchPimiento, posición: 6)
     }
     
     @IBAction func pulsoPiña(value: Bool) {
         ingredientes.más[7] = value
         
-        bloqueoBotones(switchPiña)
+        bloqueoBotones(switchPiña, posición: 7)
     }
     
     @IBAction func pulsoChampiñones(value: Bool) {
         ingredientes.más[8] = value
         
-        bloqueoBotones(switchCampiñones)
+        bloqueoBotones(switchCampiñones, posición: 8)
     }
     
     @IBAction func pulsoCarne(value: Bool) {
         ingredientes.más[9] = value
         
-        bloqueoBotones(switchCarne)
+        bloqueoBotones(switchCarne, posición: 9)
     }
     
-    func bloqueoBotones(botón: WKInterfaceSwitch) {
+    func bloqueoBotones(botón: WKInterfaceSwitch, posición: Int) {
         let ingredientesActivos = ingredientes.más.filter{$0.1 == true}
         if ingredientesActivos.count > 5 {
             botón.setOn(false)
+            ingredientes.más[posición] = false
         }
 
-        siguienteBotón.setEnabled(ingredientesActivos.count > 1)
+        siguienteBotón.setEnabled(ingredientesActivos.count > 0)
     }
 }
