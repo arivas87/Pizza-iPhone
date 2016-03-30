@@ -137,13 +137,14 @@
                                 <action selector="pulsoCarne:" destination="Xfa-42-jan" id="ypr-mq-eLk"/>
                             </connections>
                         </switch>
-                        <button width="1" alignment="left" title="Siguiente" id="UPC-0E-kL1">
+                        <button width="1" alignment="left" title="Siguiente" enabled="NO" id="UPC-0E-kL1">
                             <connections>
                                 <action selector="pulsoSiguiente" destination="Xfa-42-jan" id="hwI-ID-TF2"/>
                             </connections>
                         </button>
                     </items>
                     <connections>
+                        <outlet property="siguienteBotón" destination="UPC-0E-kL1" id="Bxj-00-RNN"/>
                         <outlet property="switchAceituna" destination="HgP-0D-bxY" id="xvh-OU-mDb"/>
                         <outlet property="switchCampiñones" destination="f39-f5-iwW" id="oaC-Db-OMA"/>
                         <outlet property="switchCarne" destination="6Rc-cW-YjJ" id="4El-7A-8Mu"/>
@@ -158,6 +159,13 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="1083" y="318"/>
+        </scene>
+        <!--Resumen-->
+        <scene sceneID="SZr-zJ-IIp">
+            <objects>
+                <controller identifier="resumen" title="Resumen" id="uNv-N3-s0W"/>
+            </objects>
+            <point key="canvasLocation" x="1398" y="304"/>
         </scene>
     </scenes>
 </document>

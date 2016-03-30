@@ -43,7 +43,7 @@ class MásViewController: UIViewController {
     }
     
     @IBAction func cambioSelección(sender: UISwitch) {
-        // FIXME: Se pueden seleccionar más y sale raro
+
         count = sender.on ? count + 1 : count - 1
         
         if count == 5 {
@@ -59,13 +59,6 @@ class MásViewController: UIViewController {
         }
         
         ingredientes.más[sender.tag] = sender.on
-        
-        /*if count > 5 {
-            sender.setOn(false, animated: false)
-            count -= 1
-        } else {
-            ingredientes.más[sender.tag] = sender.on
-        }*/
         
         if count > 0 {
             botonSiguiente.enabled = true
