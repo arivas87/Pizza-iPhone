@@ -51,6 +51,10 @@ class ResumenController: WKInterfaceController {
     }
 
     @IBAction func pulsoConfirmar() {
-        // TODO: Diálogo de Okey y pasar a la primera vista
+        let alert = WKAlertAction(title: "Aceptar", style: .Default, handler: { () in
+            self.presentControllerWithName("tamaño", context: nil)
+        })
+        
+        presentAlertControllerWithTitle("Oido cocina", message: "Su pedido ha sido recibido. Muchas gracias.", preferredStyle: .Alert, actions: [alert])
     }
 }
